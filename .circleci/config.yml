@@ -18,4 +18,4 @@ jobs:
             ls
       - save_cache:
           key: -v3-{{ checksum "package.json" }}
-          paths: /usr/local/lib
+          paths: /usr/local/lib/node_modules
