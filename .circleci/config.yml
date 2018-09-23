@@ -12,8 +12,8 @@ jobs:
           name: Npm stuff
           command: |
             npm list -g
-            # npm install
-            # npm test
+            npm install
+            npm test
       - save_cache:
           key: -v3-{{ checksum "package.json" }}
-          paths: .
+          paths: /usr/local/lib
