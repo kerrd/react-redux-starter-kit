@@ -8,6 +8,8 @@ jobs:
       - checkout
       - restore_cache:
           key: -v3-{{ checksum "package.json" }}
+      - run: npm install
+      - run: npm test
       - save_cache:
           key: -v3-{{ checksum "package.json" }}
           paths: .
