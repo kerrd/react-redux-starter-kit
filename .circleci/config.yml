@@ -10,3 +10,4 @@ jobs:
           key: -v3-{{ checksum "package.json" }}
       - save_cache:
           key: -v3-{{ checksum "package.json" }}
+          paths: .
